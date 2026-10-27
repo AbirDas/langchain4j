@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/langchain4j")
-public class ChatBoot {
+public class ChatBot {
 
     private final ChatModel chatModel;
 
@@ -17,7 +17,7 @@ public class ChatBoot {
         this.chatModel = chatModel;
     }*/
 
-    public ChatBoot(OpenAiChatModel.OpenAiChatModelBuilder openAiChatModelBuilder) {
+    public ChatBot(OpenAiChatModel.OpenAiChatModelBuilder openAiChatModelBuilder) {
         this.chatModel = openAiChatModelBuilder
                 .build();
     }
